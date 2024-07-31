@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiba Tours</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">    
+    <link rel="stylesheet" type="text/css" href="css/animate.compat.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="css/theme-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/new-style.css">    
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header-main">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <a href="#" class="site-logo" title="Taiba Tours">
+                            <img src="img/logo.svg" alt="Taiba Tours">
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <div class="sidebar-overlay"></div>
+                        <div class="d-flex align-items-center">
+                            <div class="navigation-bar">
+                                <nav class="navbar-main">
+                                    <div class="mb-menu-logo">
+                                        <a href="#" class="menu-logo">
+                                            <img src="img/logo.svg" alt="Taiba Tours">
+                                        </a>
+                                        <span class="close-menu"></span>
+                                    </div>
+                                    <div class="nav-menu-main">
+                                        <ul class="menu">
+                                            <li><a href="#">About Us</a></li>
+                                            <li class="menu-item-has-children"><a href="#">Services</a></li>
+                                            <li><a href="#">Tour guide</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <a href="#" class="head-btn">Donation</a>
+                            <a href="tel:0406505729" class="head-phone">
+                                <i class="icon icon-phone"></i> <span>0406 505 729</span>
+                            </a>
+                            <div class="menu-icon"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="bannerSec">
+            <div class="bannerCaption">
+                <div class="banner-cap-inner container">
+                    <div class="subtitle wow animate__fadeInUp">Your <span class="animation_text" data-type-text="the peace, serenity, tranquillity, spiritual journey"></span> for</div>
+                    <h1 class="banner-title wow animate__fadeInUp" data-wow-delay="0.2s">Hajj and Umrah Tours</h1>    
+                    <p class="bannerDesc wow animate__fadeInUp" data-wow-delay="0.3s">Australia - Servicing, Syd, Brisbane, Melbourne, Adelaide and Perth</p>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#popup_modal" class="btn wow animate__fadeInUp" data-wow-delay="0.3s">Book Now</a>
+
+                </div>
+            </div>
+            <div class="bannerVideo">
+                <video autoplay muted="" loop poster="img/video-poster-img.jpg">
+                    <source src="img/taiba-tours-web-banner-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- <div class="bannerImg">
+                <img src="img/banner-img.jpg" alt="">
+            </div> -->
+        </section>
+
+        <section class="about-sec">
+            <div class="about-inner">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <div class="about-content">
+                            <div class="img-box">
+                                <img src="img/about-tips.jpg" alt="about-tips">
+                            </div>
+                            <div class="about-text">
+                                <div class="sec-head  wow animate__fadeInUp" data-wow-delay="0.1s">
+                                    <h3 class="sec-title fw-400">About Our Trips</h3>
+                                </div>
+                                <div class="cms-con  wow animate__fadeInUp" data-wow-delay="0.2s">
+                                    <p>
+                                        At Taiba Tours, we ensure a seamless and enriching Hajj and Umrah experience for
+                                        Australian pilgrims. From visa processing and flights to accommodations in
+                                        Makkah and Madina, coach transfers, and expert tour guides, we handle every
+                                        detail with excellence and care.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tours-booking-form">
+                            <img src="img/about-tips.jpg" alt="">
+                            <div class="sec-head">
+                                <h3 class="sec-title fw-400">Tours Booking</h3>
+                            </div>
+                            <form>
+                                <div class="form-floating form-group">
+                                    <input type="text" class="form-control" id="fullName" placeholder="fullName">
+                                    <label for="fullName">Full Name</label>
+                                </div>
+                                <div class="form-floating form-group">
+                                    <input type="number" class="form-control" id="contactNo">
+                                    <label for="contactNo">Contact No</label>
+                                </div>
+                                <div class="form-floating form-group">
+                                    <input type="email" class="form-control" id="email">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="form-floating form-group">
+                                    <select class="form-select form-control" id="selectTour"
+                                        aria-label="Floating label select example">
+                                        <option selected>Select Tour</option>
+                                        <option value="1">Hajj TOurs</option>
+                                        <option value="2">Umrah Tours</option>
+                                    </select>
+                                    <label for="selectTour">Select Your Tour</label>
+                                </div>
+                                <div class="form-floating form-group">                                    
+                                    <input type="text" data-provide="datepicker" class="form-control form-control-date" id="datepicker" placeholder="Preferred Dates">
+                                    <label for="preferredDates">Preferred Dates</label>
+                                </div>
+                                <div class="form-floating form-group">
+                                    <textarea class="form-control" id="specialRequirementsComments"></textarea>
+                                    <label for="specialRequirementsComments">Special Requirements/Comments</label>
+                                </div>
+                                <div class="form-group">
+                                    <div class="cms-con">
+                                        <p>
+                                            We'll have pricing starting from, once dates received, quote will be sent
+                                            within 48hrs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <input type="submit" value="Book Now" class="btn btn-submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-services-sec">
+            <div class="container">
+                <div class="sec-head">
+                    <h3 class="sec-title text-center  wow animate__fadeInUp">Our Service</h3>
+                </div>
+                <div class="services-row d-flex flex-wrap">
+                    <div class="services-col  wow animate__fadeInUp" data-wow-delay="0.1s">
+                        <div class="services-box">
+                            <div class="services-icon">
+                                <img src="img/our-service-icon-1.svg" alt="our-service-icon-1">
+                            </div>
+                            <div class="sevices-content">
+                                <h5 class="service-content-title">Visa</h5>
+                                <div class="cms-con text-center">
+                                    <p>
+                                        Effortless visa processing to ensure a smooth start to your pilgrimage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-col  wow animate__fadeInUp" data-wow-delay="0.2s">
+                        <div class="services-box">
+                            <div class="services-icon">
+                                <img src="img/our-service-icon-2.svg" alt="our-service-icon-2">
+                            </div>
+                            <div class="sevices-content">
+                                <h5 class="service-content-title">Airline Ticket</h5>
+                                <div class="cms-con text-center">
+                                    <p>
+                                        Competitive rates on flights, making your journey to Saudi Arabia hassle-free.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-col wow animate__fadeInUp" data-wow-delay="0.3s">
+                        <div class="services-box">
+                            <div class="services-icon">
+                                <img src="img/our-service-icon-3.svg" alt="our-service-icon-3">
+                            </div>
+                            <div class="sevices-content">
+                                <h5 class="service-content-title">Hotels</h5>
+                                <div class="cms-con text-center">
+                                    <p>
+                                        Comfortable and conveniently located accommodations to enhance your spiritual
+                                        experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-col wow animate__fadeInUp" data-wow-delay="0.4s">
+                        <div class="services-box">
+                            <div class="services-icon">
+                                <img src="img/our-service-icon-4.svg" alt="our-service-icon-4">
+                            </div>
+                            <div class="sevices-content">
+                                <h5 class="service-content-title">Coach Transfers</h5>
+                                <div class="cms-con text-center">
+                                    <p>
+                                        Reliable and comfortable transportation throughout your pilgrimage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-col wow animate__fadeInUp" data-wow-delay="0.5s">
+                        <div class="services-box">
+                            <div class="services-icon">
+                                <img src="img/our-service-icon-5.svg" alt="our-service-icon-5">
+                            </div>
+                            <div class="sevices-content">
+                                <h5 class="service-content-title">Travel Insurance</h5>
+                                <div class="cms-con text-center">
+                                    <p>
+                                        Travel worry-free with our reliable insurance coverage, protecting you from
+                                        unexpected events on your adventure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-col wow animate__fadeInUp" data-wow-delay="0.6s">
+                        <div class="services-box">
+                            <div class="services-icon">
+                                <img src="img/our-service-icon-6.svg" alt="our-service-icon-6">
+                            </div>
+                            <div class="sevices-content">
+                                <h5 class="service-content-title">Tour Guide</h5>
+                                <div class="cms-con text-center">
+                                    <p>
+                                        Expert guides to enrich your journey with insightful knowledge and support.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-packages-sec commonsec">
+            <div class="container">
+                <div class="sec-head">
+                    <h2 class="sec-title text-white fw-400  wow animate__fadeInUp">Our Packages</h2>
+                </div>
+                <div class="package-inner">
+                    <ul class="nav nav-tabs wow animate__fadeInUp" data-wow-delay="0.2s">
+                        <li class="nav-item">
+                            <button class="nav-link active">Haji</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link">Umrah</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content wow animate__fadeInUp" data-wow-delay="0.3s">
+                        <div class="tab-col">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="package-box">
+                                        <div class="icon-box">
+                                            <i class="icon icon-arrow"></i>
+                                        </div>
+                                        <div class="desc-box">
+                                            <h5 class="package-title">Visa</h5>
+                                            <div class="cms-con">
+                                                <p>
+                                                    Hassle-free visa processing.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="package-box">
+                                        <div class="icon-box">
+                                            <i class="icon icon-arrow"></i>
+                                        </div>
+                                        <div class="desc-box">
+                                            <h5 class="package-title">Airline Ticket</h5>
+                                            <div class="cms-con">
+                                                <p>
+                                                    Budget-friendly flights to Saudi Arabia.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="package-box">
+                                        <div class="icon-box">
+                                            <i class="icon icon-arrow"></i>
+                                        </div>
+                                        <div class="desc-box">
+                                            <h5 class="package-title">Hotels</h5>
+                                            <div class="cms-con">
+                                                <p>
+                                                    Standard accommodations in Makkah and Madina. Breakfast included
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="package-box">
+                                        <div class="icon-box">
+                                            <i class="icon icon-arrow"></i>
+                                        </div>
+                                        <div class="desc-box">
+                                            <h5 class="package-title">Makkah</h5>
+                                            <div class="cms-con">
+                                                <p>
+                                                    Text
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="package-box">
+                                        <div class="icon-box">
+                                            <i class="icon icon-arrow"></i>
+                                        </div>
+                                        <div class="desc-box">
+                                            <h5 class="package-title">Madina</h5>
+                                            <div class="cms-con">
+                                                <p>
+                                                    Text
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="package-box">
+                                        <div class="icon-box">
+                                            <i class="icon icon-arrow"></i>
+                                        </div>
+                                        <div class="desc-box">
+                                            <h5 class="package-title">Coach Transfers</h5>
+                                            <div class="cms-con">
+                                                <p>
+                                                    Reliable transport between holy sites.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="package-box">
+                                        <div class="icon-box">
+                                            <i class="icon icon-arrow"></i>
+                                        </div>
+                                        <div class="desc-box">
+                                            <h5 class="package-title">Tour Guide</h5>
+                                            <div class="cms-con">
+                                                <p>
+                                                    Basic support from experienced guides.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="package-box">
+                                        <div class="icon-box">
+                                            <i class="icon icon-arrow"></i>
+                                        </div>
+                                        <div class="desc-box">
+                                            <h5 class="package-title">Gift for customers</h5>
+                                            <div class="cms-con">
+                                                <p>
+                                                    Text
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-green" data-bs-toggle="modal" data-bs-target="#popup_modal">inquire now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="commonsec hotel-sec">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <h2 class="sec-title wow animate__fadeInUp">Hotels</h2>
+                </div>
+
+                <div data-js="hero-demo">
+                  <div class="ui-group">
+                    <div class="filters button-group js-radio-button-group device-type">
+                      <button class="button is-checked" data-filter="*">All</button>
+                      <button class="button" data-filter=".cat-1">Al Safwa Hotel, The First Tower</button>
+                      <button class="button" data-filter=".cat-2">Makkah Hotel & Tower</button>
+                      <button class="button" data-filter=".cat-3">Durrat Al Eiman Hotel</button>
+                      <button class="button" data-filter=".cat-4">Al Aqeeq Madinah Hotel</button>                      
+                    </div>
+                  </div>
+
+              <ul class="grid">
+                <li class="element-item cat-1" data-category="cat-1">
+                  <a href="img/ai-safwa-hotel-gallery-img1.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-safwa-hotel-gallery-img1.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-1" data-category="cat-1">
+                  <a href="img/ai-safwa-hotel-gallery-img2.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-safwa-hotel-gallery-img2.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-1" data-category="cat-1">
+                  <a href="img/ai-safwa-hotel-gallery-img3.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-safwa-hotel-gallery-img3.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-1" data-category="cat-1">
+                  <a href="img/ai-safwa-hotel-gallery-img4.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-safwa-hotel-gallery-img4.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-1" data-category="cat-1">
+                  <a href="img/ai-safwa-hotel-gallery-img5.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-safwa-hotel-gallery-img5.jpg" alt="" />                    
+                  </a>
+                </li>
+
+                <li class="element-item cat-1" data-category="cat-1">
+                  <a href="img/ai-safwa-hotel-gallery-img6.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-safwa-hotel-gallery-img6.jpg" alt="" />                    
+                  </a>
+                </li>
+                
+                <li class="element-item cat-2" data-category="cat-2">
+                  <a href="img/makkah-hotel-gallery-img1.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/makkah-hotel-gallery-img1.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-2" data-category="cat-2">
+                  <a href="img/makkah-hotel-gallery-img2.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/makkah-hotel-gallery-img2.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-2" data-category="cat-2">
+                  <a href="img/makkah-hotel-gallery-img3.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/makkah-hotel-gallery-img3.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-2" data-category="cat-2">
+                  <a href="img/makkah-hotel-gallery-img4.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/makkah-hotel-gallery-img4.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-2" data-category="cat-2">
+                  <a href="img/makkah-hotel-gallery-img5.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/makkah-hotel-gallery-img5.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-2" data-category="cat-2">
+                  <a href="img/makkah-hotel-gallery-img6.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/makkah-hotel-gallery-img6.jpg" alt="" />                    
+                  </a>
+                </li>
+
+                <li class="element-item cat-3" data-category="cat-3">
+                  <a href="img/durrat-hotel-gallery-img1.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/durrat-hotel-gallery-img1.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-3" data-category="cat-3">
+                  <a href="img/durrat-hotel-gallery-img2.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/durrat-hotel-gallery-img2.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-3" data-category="cat-3">
+                  <a href="img/durrat-hotel-gallery-img3.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/durrat-hotel-gallery-img3.jpg" alt="" />                    
+                  </a>
+                </li>
+
+                <li class="element-item cat-3" data-category="cat-3">
+                  <a href="img/durrat-hotel-gallery-img4.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/durrat-hotel-gallery-img4.jpg" alt="" />                    
+                  </a>
+                </li>
+
+                <li class="element-item cat-3" data-category="cat-3">
+                  <a href="img/durrat-hotel-gallery-img5.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/durrat-hotel-gallery-img5.jpg" alt="" />                    
+                  </a>
+                </li>
+                <li class="element-item cat-3" data-category="cat-3">
+                  <a href="img/durrat-hotel-gallery-img6.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/durrat-hotel-gallery-img6.jpg" alt="" />                    
+                  </a>
+                </li>
+
+                <li class="element-item cat-4" data-category="cat-4">
+                  <a href="img/ai-aqeeq-madinah-hotel-gallery-img1.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-aqeeq-madinah-hotel-gallery-img1.jpg" alt="" />                    
+                  </a>
+                </li>
+
+                <li class="element-item cat-4" data-category="cat-4">
+                  <a href="img/ai-aqeeq-madinah-hotel-gallery-img2.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-aqeeq-madinah-hotel-gallery-img2.jpg" alt="" />                    
+                  </a>
+                </li>
+                
+                <li class="element-item cat-4" data-category="cat-4">
+                  <a href="img/ai-aqeeq-madinah-hotel-gallery-img3.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-aqeeq-madinah-hotel-gallery-img3.jpg" alt="" />                    
+                  </a>
+                </li>
+
+                <li class="element-item cat-4" data-category="cat-4">
+                  <a href="img/ai-aqeeq-madinah-hotel-gallery-img4.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-aqeeq-madinah-hotel-gallery-img4.jpg" alt="" />                    
+                  </a>
+                </li>
+
+                <li class="element-item cat-4" data-category="cat-4">
+                  <a href="img/ai-aqeeq-madinah-hotel-gallery-img5.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-aqeeq-madinah-hotel-gallery-img5.jpg" alt="" />                    
+                  </a>
+                </li>
+                
+                <li class="element-item cat-4" data-category="cat-4">
+                  <a href="img/ai-aqeeq-madinah-hotel-gallery-img6.jpg" class="projectBox" data-fancybox="gallery">
+                    <img src="img/ai-aqeeq-madinah-hotel-gallery-img6.jpg" alt="" />                    
+                  </a>
+                </li>                
+                
+              </ul>
+            </div>
+
+            </div>
+        </section>
+
+        <section class="commonsec whychoose-sec">
+            <div class="container">                
+                <div class="sec-head text-center wow animate__fadeInUp">
+                    <h2 class="sec-title">Why Choose Us?</h2>                    
+                </div>
+                <ul class="whychoose-list">
+                    <li class="wow animate__fadeInUp" data-wow-delay="0.1s">
+                        <div class="whychoose-box">
+                            <div class="why-icon">
+                                <img src="img/why-choose-icon1.svg" alt="">
+                            </div>
+                            <div class="whycon">
+                                <p>Over 15 Years Experience in Hajj & Umrah</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow animate__fadeInUp" data-wow-delay="0.2s">
+                        <div class="whychoose-box">
+                            <div class="why-icon">
+                                <img src="img/why-choose-icon2.svg" alt="">
+                            </div>
+                            <div class="whycon">
+                                <p>Licensed Travel Agency With Over 30 Years Experience in the Industry</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow animate__fadeInUp" data-wow-delay="0.3s">
+                        <div class="whychoose-box">
+                            <div class="why-icon">
+                                <img src="img/why-choose-icon3.svg" alt="">
+                            </div>
+                            <div class="whycon">
+                                <p>Authorised General Sales Agent for Global Halal Travel</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow animate__fadeInUp" data-wow-delay="0.4s">
+                        <div class="whychoose-box">
+                            <div class="why-icon">
+                                <img src="img/why-choose-icon4.svg" alt="">
+                            </div>
+                            <div class="whycon">
+                                <p>Consistant Positive Customer Testimonials for 10 Years Running</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow animate__fadeInUp" data-wow-delay="0.5s">
+                        <div class="whychoose-box">
+                            <div class="why-icon">
+                                <img src="img/why-choose-icon5.svg" alt="">
+                            </div>
+                            <div class="whycon">
+                                <p>Positive Top of the Range Inclusions for an Amazing Price</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="why-bottom wow animate__fadeInUp" data-wow-delay="0.6s">
+                    <a href="tel:0406505729" class="why-call">
+                          <i class="icon icon-phone"></i> <span>0406 505 729</span>
+                       </a>
+                    <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#popup_modal">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="commonsec ourhotel-sec">
+            <div class="container">
+                <div class="our-hotel-img  wow animate__fadeInUp">
+                    <img src="img/our-hotel-img.jpg" alt="">
+                </div>
+                <div class="sec-head text-center  wow animate__fadeInUp" data-wow-delay="0.2s">
+                    <h2 class="sec-title">Our Hotels in Hajj and Umrah</h2>
+                    <p>Taiba Tours offers a wide range of hotel options in Makkah and Madina to ensure you find the perfect accommodation for your pilgrimage. With various choices available, you can easily select the hotel that suits your requirements, providing comfort and convenience throughout your stay.</p>
+                    <a href="#" class="btn btn-green" data-bs-toggle="modal" data-bs-target="#popup_modal">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="commonsec statistics-sec">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <h2 class="sec-title  wow animate__fadeInUp">Some Statistics</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3  wow animate__fadeInUp" data-wow-delay="0.1s">
+                        <div class="Statistics-sl">
+                            <span class="counter">16,500</span>
+                            No. Of Haji's Since 1995
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3  wow animate__fadeInUp" data-wow-delay="0.2s">
+                        <div class="Statistics-sl">
+                            <span class="counter">42,000</span>
+                            No. Of People in Umrah Since 1995
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3  wow animate__fadeInUp" data-wow-delay="0.3s">
+                        <div class="Statistics-sl">
+                            <span class="counter">22,000</span>
+                            Islamic Tour
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3  wow animate__fadeInUp" data-wow-delay="0.4s">
+                        <div class="Statistics-sl">
+                            <span class="counter">105,000</span>
+                            Ticket Sale Since 1995
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="commonsec gallery-sec">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <h2 class="sec-title  wow animate__fadeInUp">Gallery</h2>
+                </div>
+
+                <ul class="gallerylist">
+                    <li class=" wow animate__fadeInUp" data-wow-delay="0.1s">
+                        <a data-fancybox="gallery1"class="gallery-box" href="img/gallery-img1.jpg">
+                            <div class="gallery-img">
+                                <img src="img/gallery-img1.jpg" alt="" />
+                            </div>
+                        </a>
+                    </li>
+                    <li class=" wow animate__fadeInUp" data-wow-delay="0.2s">
+                        <a data-fancybox="gallery1"class="gallery-box" href="img/gallery-img2.jpg">
+                            <div class="gallery-img">
+                                <img src="img/gallery-img2.jpg" alt="" />
+                            </div>
+                        </a>
+                    </li>
+                    <li class=" wow animate__fadeInUp" data-wow-delay="0.3s">
+                        <a data-fancybox="gallery1"class="gallery-box" href="img/gallery-img3.jpg">
+                            <div class="gallery-img">
+                                <img src="img/gallery-img3.jpg" alt="" />
+                            </div>
+                        </a>
+                    </li>
+                    <li class=" wow animate__fadeInUp" data-wow-delay="0.4s">
+                        <a data-fancybox="gallery1"class="gallery-box" href="img/gallery-img4.jpg">
+                            <div class="gallery-img">
+                                <img src="img/gallery-img4.jpg" alt="" />
+                            </div>
+                        </a>
+                    </li>
+                    <li class=" wow animate__fadeInUp" data-wow-delay="0.5s">
+                        <a data-fancybox="gallery1"class="gallery-box" href="img/gallery-img5.jpg">
+                            <div class="gallery-img">
+                                <img src="img/gallery-img5.jpg" alt="" />
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class=" wow animate__fadeInUp" data-wow-delay="0.6s">
+                        <a data-fancybox="gallery1"class="gallery-box" href="img/gallery-img6.jpg">
+                            <div class="gallery-img">
+                                <img src="img/gallery-img6.jpg" alt="" />
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="commonsec faq-sec">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <h2 class="sec-title  wow animate__fadeInUp">FAQ</h2>
+                </div>
+
+                <div class="faqsmain">
+                    <div class="accordion" id="accordionfaq">
+                      <div class="accordion-item  wow animate__fadeInUp" data-wow-delay="0.1s">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is included in the Haji Makkah tour package?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionfaq">
+                          <div class="accordion-body cmsCon">
+                             <p>Our Haji Makkah tour package typically includes round-trip airfare, accommodation in Makkah and Madinah, ground transportation, guided tours, meals, and assistance with Hajj rituals. Specific inclusions may vary by package.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item  wow animate__fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           Do I need a visa for the Hajj pilgrimage?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionfaq">
+                          <div class="accordion-body cmsCon">
+                             <p>Our Haji Makkah tour package typically includes round-trip airfare, accommodation in Makkah and Madinah, ground transportation, guided tours, meals, and assistance with Hajj rituals. Specific inclusions may vary by package.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item  wow animate__fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           What are the accommodation arrangements?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionfaq">
+                          <div class="accordion-body cmsCon">
+                             <p>Our Haji Makkah tour package typically includes round-trip airfare, accommodation in Makkah and Madinah, ground transportation, guided tours, meals, and assistance with Hajj rituals. Specific inclusions may vary by package.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item  wow animate__fadeInUp" data-wow-delay="0.4s">
+                        <h2 class="accordion-header" id="headingfour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            Is travel insurance included in the package?
+                          </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionfaq">
+                          <div class="accordion-body cmsCon">
+                             <p>Our Haji Makkah tour package typically includes round-trip airfare, accommodation in Makkah and Madinah, ground transportation, guided tours, meals, and assistance with Hajj rituals. Specific inclusions may vary by package.</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer-main">
+            <div class="footer-inner">
+               <div class="container">
+                   <div class="footer-middle  wow animate__fadeInUp" data-wow-delay="0.1s">
+                       <a href="#" class="footer-logo">
+                           <img src="img/footer-logo.svg" alt="" />
+                       </a>
+                       <a href="tel:0406505729" class="foot-call">
+                          <i class="icon icon-phone"></i> <span>0406 505 729</span>
+                       </a>
+                       <a href="mailto:info@taibatours.com.au" class="foot-mail">
+                          <i class="icon icon-email"></i> <span>info@taibatours.com.au</span>
+                       </a>
+                       <div class="foot-address">
+                           <p>4/94 Bryant Street, <br>Padstow NSW 2211</p>
+                       </div>
+                       <div class="social-media">
+                           <a href="#" class="fb"><i class="icon icon-facebook"></i></a>
+                           <a href="#" class="instagram"><i class="icon icon-instagram"></i></a>
+                           <a href="#" class="tiktok"><i class="icon icon-tiktok"></i></a>
+                       </div>
+                   </div>
+               </div> 
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                      <div class="col-sm-7 col-12">
+                        <p>Copyright © 2024 <a href="#" title="Taiba Tours">Taiba Tours</a>. All rights reserved.</p>                        
+                      </div>
+                      <div class="col-sm-5 col-12">
+                        <p class="powerdby">Design and Develop by: <a href="#" target="_blank"><img src="img/dgrooar.svg" alt="dgrooar"></a></p>
+                      </div>
+                    </div>    
+                </div>
+                
+            </div>
+        </footer>
+
+        <!-- Modal -->
+            <div class="modal fade popup-modal" id="popup_modal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- <div class="modal-header">
+                    <h5 class="popup-title">Tours Booking</h5>
+                    <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close" class="close-popup"></a>                    
+                  </div> -->
+                  <div class="modal-inner">
+
+                    <div class="tours-booking-form">
+                        <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close" class="close-popup"></a>
+                            <div class="sec-head">
+                                <h3 class="sec-title fw-400">Tours Booking</h3>
+                            </div>
+                            <form>
+                                <div class="form-floating form-group">
+                                    <input type="text" class="form-control" id="fullName" placeholder="fullName">
+                                    <label for="fullName">Full Name</label>
+                                </div>
+                                <div class="form-floating form-group">
+                                    <input type="number" class="form-control" id="contactNo">
+                                    <label for="contactNo">Contact No</label>
+                                </div>
+                                <div class="form-floating form-group">
+                                    <input type="email" class="form-control" id="email">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="form-floating form-group">
+                                    <select class="form-select form-control" id="selectTour"
+                                        aria-label="Floating label select example">
+                                        <option selected>Select Tour</option>
+                                        <option value="1">Hajj TOurs</option>
+                                        <option value="2">Umrah Tours</option>
+                                    </select>
+                                    <label for="selectTour">Select Your Tour</label>
+                                </div>
+                                <div class="form-floating form-group">                                    
+                                    <input type="text" data-provide="datepicker" name="start_datenow" class="form-control form-control-date" id="datepicker" placeholder="Preferred Dates">
+                                    <label for="preferredDates">Preferred Dates</label>
+                                </div>
+                                <div class="form-floating form-group">
+                                    <textarea class="form-control" id="specialRequirementsComments"></textarea>
+                                    <label for="specialRequirementsComments">Special Requirements/Comments</label>
+                                </div>
+                                <div class="form-group">
+                                    <div class="cms-con">
+                                        <p>
+                                            We'll have pricing starting from, once dates received, quote will be sent
+                                            within 48hrs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <input type="submit" value="Book Now" class="btn btn-submit">
+                                </div>
+                            </form>
+                        </div>
+                    
+                  </div>                  
+                </div>
+              </div>
+            </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countup.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/fancybox.umd.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/isotope-docs.min.js"></script> 
+    <script>new WOW().init();</script>
+
+    <script src="js/typed.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            if ($('.animation_text').length > 0) {
+              var typingTexts = $('.animation_text').data('type-text');
+              var typingTextStr = typingTexts.split(',');
+
+              var typing = new Typed(".animation_text", {
+                strings: typingTextStr,
+                typeSpeed: 120,
+                backSpeed: 50,
+                loop: true,
+                backDelay: 2500,
+              });
+            }
+          });
+        </script>
+
+</body>
+</html>
